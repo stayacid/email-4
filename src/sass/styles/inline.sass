@@ -23,22 +23,10 @@ p
   @include margin(0, 0, 0, 0)
   -webkit-text-size-adjust: none
 
-.body
-  background-color: $pumpkin-orange
-
-table.body
-  @include margin(auto, auto, auto, auto)
-  @include padding(0, 0, 0, 0)
-  width: 100%
-  background-color: $pumpkin-orange
-  th
-    font-weight: 400
-
 table.main
   @include margin(auto, auto, auto, auto)
   @include padding(0, 0, 0, 0)
-  max-width: 600px
-  width: 100%
+  width: 95%
   text-align: left
 
 .wide 
@@ -55,16 +43,70 @@ table.main
   display: inline-block
 
 table.content
-  @include padding(48px, 20px, 25px, 20px)
   background-color: $white
+  th
+    @include padding(48px, 20px, 30px, 20px)
+  td
+    @include padding(0, 20px, 0, 20px)
   p
     @include margin(0, 0, 35px, 0)
     line-height: 28px
     color: $greyish-brown
+    font-size: 18px
+    font-family: Helvetica, Arial, sans-serif
 
 h1
   text-align: left
   margin-bottom: 30px
+  font-size: 40px
+  line-height: 48px
+  font-family: Helvetica, Arial, sans-serif
+  font-weight: 700
+  @include margin(0, 0, 0, 0)
+
+.btn
+  @include padding(0, 50px, 0, 50px)
+  font-family: Helvetica, Arial, sans-serif
+  color: $white
+  font-size: 14px
+  line-height: 50px
+  text-decoration: none
+  white-space: nowrap
+  text-transform: uppercase
+  background-color: $pumpkin-orange
+  display: inline-block
+  border-radius: 25px
+  font-weight: 700
+
+table.best
+  background-color: $white
+  width: 100%
+  th
+    @include padding(48px, 20px, 30px, 20px)
+  td
+    @include padding(0, 20px, 0, 20px)
+  h2
+    color: #111111
+    font-family: Helvetica, Arial, sans-serif
+    font-size: 30px
+    font-weight: 700
+    line-height: 36px
+    @include margin(0, 0, 0, 0)
+  h3
+    color: #111111
+    font-family: Helvetica, Arial, sans-serif
+    font-size: 16px
+    font-weight: 700
+    line-height: 22px
+    @include margin(0, 0, 5px, 0)
+  p
+    @include margin(0, 0, 35px, 0)
+    line-height: 18px
+    color: $greyish-brown
+    font-size: 14px
+    font-family: Helvetica, Arial, sans-serif
+  .arcticle_img
+    padding-bottom: 10px
 
 .footer
   background-color: $black

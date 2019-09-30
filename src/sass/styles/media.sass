@@ -2,9 +2,23 @@
 
 @media (min-width: 420px) 
   table.content
-    @include padding(48px, 54px, 25px, 54px)
+    th
+      @include padding(48px, 40px, 30px, 40px)
+    td
+      @include padding(0, 40px, 0, 40px)
   .copyright
     @include padding(55px, 0, 55px, 54px)
+  table.best
+    th
+      @include padding(48px, 40px, 30px, 40px)
+    td
+      @include padding(0, 40px, 0, 40px)
+    .arcticle_img, .arcticle_text
+      display: inline-block
+      width: 48%
+    .arcticle_text
+      float: right
+      padding-left: 10px
   table.social
     padding-right: 40px
     th:first-of-type

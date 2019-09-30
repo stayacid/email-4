@@ -1,14 +1,35 @@
 @media (min-width: 420px) {
-  table.content {
+  table.content th {
     padding-top: 48px;
-    padding-right: 54px;
-    padding-bottom: 25px;
-    padding-left: 54px; }
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px; }
+  table.content td {
+    padding-top: 0;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px; }
   .copyright {
     padding-top: 55px;
     padding-right: 0;
     padding-bottom: 55px;
     padding-left: 54px; }
+  table.best th {
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px; }
+  table.best td {
+    padding-top: 0;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px; }
+  table.best .arcticle_img, table.best .arcticle_text {
+    display: inline-block;
+    width: 48%; }
+  table.best .arcticle_text {
+    float: right;
+    padding-left: 10px; }
   table.social {
     padding-right: 40px; }
     table.social th:first-of-type {
