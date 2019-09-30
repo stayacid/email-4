@@ -1,0 +1,102 @@
+@import "../settings/mixins"
+
+body 
+  @include margin(0, 0, 0, 0)
+  @include padding(0, 0, 0, 0)
+  @include font-normal()
+  background-color: $pumpkin-orange
+
+table
+  @include margin(0, 0, 0, 0)
+  @include padding(0, 0, 0, 0)
+
+img
+  display: block
+
+a
+  color: $greyish-brown
+  line-height: 28px
+  -webkit-text-size-adjust: none
+
+p
+  @include padding(0, 0, 0, 0)
+  @include margin(0, 0, 0, 0)
+  -webkit-text-size-adjust: none
+
+.body
+  background-color: $pumpkin-orange
+
+table.body
+  @include margin(auto, auto, auto, auto)
+  @include padding(0, 0, 0, 0)
+  width: 100%
+  background-color: $pumpkin-orange
+  th
+    font-weight: 400
+
+table.main
+  @include margin(auto, auto, auto, auto)
+  @include padding(0, 0, 0, 0)
+  max-width: 600px
+  width: 100%
+  text-align: left
+
+.wide 
+  width: 100%
+
+.header
+  @include padding(30px, 0, 24px, 0)
+  text-align: center
+
+.logo
+  font-size: 0
+  line-height: 0
+  -webkit-text-size-adjust: none
+  display: inline-block
+
+table.content
+  @include padding(48px, 20px, 25px, 20px)
+  background-color: $white
+  p
+    @include margin(0, 0, 35px, 0)
+    line-height: 28px
+    color: $greyish-brown
+
+h1
+  text-align: left
+  margin-bottom: 30px
+
+.footer
+  background-color: $black
+  color: $grey
+  font-size: 14px
+  line-height: 30px
+
+.copyright
+  @include padding(55px, 0, 55px, 20px)
+
+table.social
+  width: 100%
+  padding-right: 20px
+  th
+    width: 100%
+  th:first-of-type
+    text-align: right
+    padding-right: 5px
+  a 
+    font-size: 0
+    line-height: 0
+    @include padding(22px, 5px, 22px, 0) //looks stupid
+    display: inline-block
+
+.unsubscribe
+  td
+    @include padding(30px, 0, 30px, 0)
+    text-align: center
+    color: $white
+    p
+      line-height: 18px
+      font-size: 14px
+    a
+      color: $white
+      line-height: 18px

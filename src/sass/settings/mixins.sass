@@ -1,0 +1,31 @@
+@import "variables"
+
+@mixin text-size-adjust($adjust) 
+  -ms-text-size-adjust: $adjust
+  -moz-text-size-adjust: $adjust
+  -webkit-text-size-adjust: $adjust
+
+
+@mixin font-normal() 
+  color: $black
+  font-family: $ff
+  font-size: $fz
+  font-style: normal
+  font-weight: normal
+  letter-spacing: normal
+  text-align: left
+  mso-line-height-rule: exactly
+
+
+@mixin margin($mt, $mr, $mb, $ml) 
+  margin-top: $mt
+  margin-right: $mr
+  margin-bottom: $mb
+  margin-left: $ml
+
+
+@mixin padding($pt, $pr, $pb, $pl) 
+  padding-top: $pt
+  padding-right: $pr
+  padding-bottom: $pb
+  padding-left: $pl

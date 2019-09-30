@@ -1,0 +1,16 @@
+@import "../settings/mixins"
+
+@media (min-width: 420px) 
+  table.content
+    @include padding(48px, 54px, 25px, 54px)
+  .copyright
+    @include padding(55px, 0, 55px, 54px)
+  table.social
+    padding-right: 40px
+    th:first-of-type
+      padding-right: 19px
+    a
+      @include padding(22px, 26px, 22px, 0) //looks stupid
+    th:last-of-type
+      a
+        @include padding(22px, 0, 22px, 0) 

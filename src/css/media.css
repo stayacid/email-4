@@ -1,0 +1,25 @@
+@media (min-width: 420px) {
+  table.content {
+    padding-top: 48px;
+    padding-right: 54px;
+    padding-bottom: 25px;
+    padding-left: 54px; }
+  .copyright {
+    padding-top: 55px;
+    padding-right: 0;
+    padding-bottom: 55px;
+    padding-left: 54px; }
+  table.social {
+    padding-right: 40px; }
+    table.social th:first-of-type {
+      padding-right: 19px; }
+    table.social a {
+      padding-top: 22px;
+      padding-right: 26px;
+      padding-bottom: 22px;
+      padding-left: 0; }
+    table.social th:last-of-type a {
+      padding-top: 22px;
+      padding-right: 0;
+      padding-bottom: 22px;
+      padding-left: 0; } }

@@ -1,0 +1,27 @@
+{
+  "name": "email",
+  "version": "1.0.0",
+  "description": "Email front-end",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Zagainov",
+  "license": "ISC",
+  "browserslist": [
+    "last 10 version"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-inline-css": "^3.3.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "pug": "^2.0.4"
+  }
+}
