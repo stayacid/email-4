@@ -5,7 +5,6 @@ var gulp = require('gulp'), // Gulp
     debug = require('gulp-debug'), // Отслеживание работы тасков в терминале (operation tracking of tasks in terminal)
     del = require('del'), // Удаление папок и файлов (delete of folders and files)
     inlineCss = require('gulp-inline-css'), // Создание инлайн-стилей (creating of inline styles)
-    notify = require("gulp-notify"), // Вывод надписей при ошибках (displaying errors)
     plumber = require('gulp-plumber'), // Обработка ошибок (error handling)
     pug = require('gulp-pug'), // Pug
     sass = require('gulp-sass'), // Sass
@@ -95,8 +94,10 @@ gulp.task('inline', function() {
     .pipe(plumber()) // Обработка ошибок таска inline (error handling of inline task)
     .pipe(debug({title: 'Inline CSS sourse'})) // Отслеживание исходника таска inline (source tracking of inline task)
     .pipe(inlineCss({ // Преобразование стилей из внешнего файла inline.css в инлайн-стили (conversion styles in inline styles)
-        preserveMediaQueries: true, // Сохранение медиа-запросов в тегах style HTML-шаблона (saving of media queries)
-        applyTableAttributes: true // Преобразование табличных стилей в атрибуты (conversion of table styles in attributes)
+        applyTableAttributes: true, // Преобразование табличных стилей в атрибуты (conversion of table styles in attributes)
+        removeStyleTags: true,
+        preserveMediaQueries: true
+
     }))
     .pipe(debug({title: 'Inline CSS'})) // Отслеживание преобразования (conversion tracking)
     .pipe(gulp.dest(paths.dist.dest)) // Сохранение результатов в production-папку dist (saving of results in production folder dist)

@@ -12,17 +12,18 @@
     th
       @include padding(48px, 40px, 30px, 40px)
     td
-      @include padding(0, 40px, 0, 40px)
+      @include padding(0, 40px, 30px, 40px)
     .arcticle_img, .arcticle_text
-      display: inline-block
-      width: 48%
+      display: inline-block !important
+      width: 47%  !important
+      min-width: 47% !important
     .arcticle_text
-      float: right
-      padding-left: 10px
+      float: right !important
+      padding-left: 10px !important
   table.social
-    padding-right: 40px
+    padding-right: 40px !important
     th:first-of-type
-      padding-right: 19px
+      padding-right: 19px !important
     a
       @include padding(22px, 26px, 22px, 0) //looks stupid
     th:last-of-type

@@ -119,6 +119,7 @@ table.best
 
 table.social
   width: 100%
+  min-width: 100%
   padding-right: 20px
   th
     width: 100%
@@ -142,3 +143,32 @@ table.social
     a
       color: $white
       line-height: 18px
+
+@media (min-width: 420px) 
+  table.content
+    th
+      @include padding(48px, 40px, 30px, 40px)
+    td
+      @include padding(0, 40px, 0, 40px)
+  .copyright
+    @include padding(55px, 0, 55px, 54px)
+  table.best
+    th
+      @include padding(48px, 40px, 30px, 40px)
+    td
+      @include padding(0, 40px, 0, 40px)
+    .arcticle_img, .arcticle_text
+      display: inline-block
+      width: 48%
+    .arcticle_text
+      float: right
+      padding-left: 10px
+  table.social
+    padding-right: 40px
+    th:first-of-type
+      padding-right: 19px
+    a
+      @include padding(22px, 26px, 22px, 0) //looks stupid
+    th:last-of-type
+      a
+        @include padding(22px, 0, 22px, 0) 

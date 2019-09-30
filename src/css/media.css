@@ -1,46 +1,47 @@
 @media (min-width: 420px) {
   table.content th {
-    padding-top: 48px;
-    padding-right: 40px;
-    padding-bottom: 30px;
-    padding-left: 40px; }
+    padding-top: 48px !important;
+    padding-right: 40px !important;
+    padding-bottom: 30px !important;
+    padding-left: 40px !important; }
   table.content td {
-    padding-top: 0;
-    padding-right: 40px;
-    padding-bottom: 0;
-    padding-left: 40px; }
+    padding-top: 0 !important;
+    padding-right: 40px !important;
+    padding-bottom: 0 !important;
+    padding-left: 40px !important; }
   .copyright {
-    padding-top: 55px;
-    padding-right: 0;
-    padding-bottom: 55px;
-    padding-left: 54px; }
+    padding-top: 55px !important;
+    padding-right: 0 !important;
+    padding-bottom: 55px !important;
+    padding-left: 54px !important; }
   table.best th {
-    padding-top: 48px;
-    padding-right: 40px;
-    padding-bottom: 30px;
-    padding-left: 40px; }
+    padding-top: 48px !important;
+    padding-right: 40px !important;
+    padding-bottom: 30px !important;
+    padding-left: 40px !important; }
   table.best td {
-    padding-top: 0;
-    padding-right: 40px;
-    padding-bottom: 0;
-    padding-left: 40px; }
+    padding-top: 0 !important;
+    padding-right: 40px !important;
+    padding-bottom: 30px !important;
+    padding-left: 40px !important; }
   table.best .arcticle_img, table.best .arcticle_text {
-    display: inline-block;
-    width: 48%; }
+    display: inline-block !important;
+    width: 47%  !important;
+    min-width: 47% !important; }
   table.best .arcticle_text {
-    float: right;
-    padding-left: 10px; }
+    float: right !important;
+    padding-left: 10px !important; }
   table.social {
-    padding-right: 40px; }
+    padding-right: 40px !important; }
     table.social th:first-of-type {
-      padding-right: 19px; }
+      padding-right: 19px !important; }
     table.social a {
-      padding-top: 22px;
-      padding-right: 26px;
-      padding-bottom: 22px;
-      padding-left: 0; }
+      padding-top: 22px !important;
+      padding-right: 26px !important;
+      padding-bottom: 22px !important;
+      padding-left: 0 !important; }
     table.social th:last-of-type a {
-      padding-top: 22px;
-      padding-right: 0;
-      padding-bottom: 22px;
-      padding-left: 0; } }
+      padding-top: 22px !important;
+      padding-right: 0 !important;
+      padding-bottom: 22px !important;
+      padding-left: 0 !important; } }

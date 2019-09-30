@@ -184,6 +184,7 @@ table.best {
 
 table.social {
   width: 100%;
+  min-width: 100%;
   padding-right: 20px; }
   table.social th {
     width: 100%; }
@@ -212,3 +213,50 @@ table.social {
   .unsubscribe td a {
     color: #ffffff;
     line-height: 18px; }
+
+@media (min-width: 420px) {
+  table.content th {
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px; }
+  table.content td {
+    padding-top: 0;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px; }
+  .copyright {
+    padding-top: 55px;
+    padding-right: 0;
+    padding-bottom: 55px;
+    padding-left: 54px; }
+  table.best th {
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px; }
+  table.best td {
+    padding-top: 0;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px; }
+  table.best .arcticle_img, table.best .arcticle_text {
+    display: inline-block;
+    width: 48%; }
+  table.best .arcticle_text {
+    float: right;
+    padding-left: 10px; }
+  table.social {
+    padding-right: 40px; }
+    table.social th:first-of-type {
+      padding-right: 19px; }
+    table.social a {
+      padding-top: 22px;
+      padding-right: 26px;
+      padding-bottom: 22px;
+      padding-left: 0; }
+    table.social th:last-of-type a {
+      padding-top: 22px;
+      padding-right: 0;
+      padding-bottom: 22px;
+      padding-left: 0; } }
